@@ -1,0 +1,57 @@
+.information{
+    margin: 1em auto;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-return{
+    margin: 1em;
+    cursor: pointer;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    background: rgb(133, 221, 0);
+    color: #fff;
+    display: flex;
+    align-self: flex-start;
+    transition: 0.3s all;
+}
+
+.btn-return:hover{
+    color: #eee;
+    transition: 0.3s all;
+}
+
+.content-information{
+    background: #000;
+    color: #fff;
+    padding: 3em;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem #444;
+    animation: entrie 0.5s ease-in-out;
+}
+
+.card-info{
+    display: flex;
+    font-weight: bold;
+    gap: 1rem;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+@keyframes entrie{
+    from{
+        transition: 0.2s all ease-in-out;
+        transform: translateY(300px);
+    }to{
+        transition: 0.2s all ease-in-out;
+        transform: translateY(0px);
+    }
+}

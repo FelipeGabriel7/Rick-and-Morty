@@ -1,0 +1,55 @@
+.card-local {
+    margin: 2em auto;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+
+.content {
+    margin: 2em;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.location-card {
+    display: flex;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 0.6rem;
+    background: #000;
+    color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem #777;
+    flex-direction: column;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+.location-card img{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.location-card:hover {
+    transition: 0.5s all;
+    transform: scale(1.05);
+}
+
+@media(max-width: 800px) {
+    .content {
+        margin: 2em;
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 500px) {
+    .content {
+        margin: 2em;
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
